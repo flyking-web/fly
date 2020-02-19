@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Eclipse Estates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS online -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--downloaded css-->
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/etrs.jpg">
+
+</head>
+<body>
+<!--start of nav-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<nav id="nav">
+    <p>
+        <span id="estate">Eclipse</span> Estates
+        <h1>Sign Up</h1>
+    </p>
+</nav>
+
+<?php
+<!--//COMPLETE PHP FORM-->
+<!--//algorithm-->
+<!--//1.create variables that will store received data-->
+<!--$username = $first_name = $last_name = $email = $password1 = $password2 = $gender = "";-->
+<!--//2.create variable that will store error message-->
+<!--$username_err = $first_name_err = $last_name_err = $email_err = $password1_err = $password2_err = $gender_err = "";-->
+<!--//3.Process incoming data-->
+<!--//    3.1.check the request method-->
+<!--if ($_SERVER['REQUEST_METHOD']== 'Post') {-->
+<!--//    3.2.clean data-->
+<!--$username = safisha($_POST['username']);-->
+<!--$first_name = safisha($_POST['first_name ']);-->
+<!--$last_name = safisha($_POST['last_name']);-->
+<!--$email = safisha($_POST['email']);-->
+<!--$password1 = safisha($_POST['password1']);-->
+<!--$password2 = safisha($_POST['password2']);-->
+<!--$gender = safisha($_POST['gender']);-->
+<!--}-->
+<!--//    3.3.check if data is empty-->
+<!--//    if true assign error messages to respective error variables-->
+<!--if(empty($username)){-->
+<!--$username_err = "Please fill in your username";-->
+<!--}-->
+<!--if(empty($first_name)){-->
+<!--$first_name_err = "Please fill in your first name";-->
+<!--}-->
+<!--if(empty($last_name)){-->
+<!--$last_name_err = "Please fill in your last name";-->
+<!--}-->
+<!--if(empty($email)){-->
+<!--$email_err = "Please fill in your email";-->
+<!--}-->
+<!--if(empty($password1)){-->
+<!--$password1_err = "Please fill in your password";-->
+<!--}-->
+<!--if(empty($password2)){-->
+<!--$password2_err = "Please fill in your confirm password";-->
+<!--}-->
+<!--//    check of password1 and password2 are matching-->
+<!--if($password1 != $password2){-->
+<!--$password1_err = "Your passwords did not match";-->
+<!--}-->
+<!--if(empty($gender)){-->
+<!--$gender_err = "Please select your gender";-->
+<!--}-->
+
+<!--echo "DETAILS:Username:$username,First name:$first_name,last name:$last_name,email:$email,gender:$gender";-->
+<!--//4.display  the data:SOON store data in a database-->
+<!--function safisha($data){-->
+<!--$data = trim($data);-->
+<!--$data = stripslashes($data);-->
+<!--$data = htmlspecialchars($data);-->
+<!--return $data;-->
+<!--}-->
+<!--?>-->
+<section id="signop">
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <label for="">Username</label><br>
+            <input type="text" name="Username"><br>
+            <!-- show error if theres one-->
+            <span class="error" style="color: #ff3f36"><?php echo $username_err?></span><br>
+
+            <label for="">First name</label><br>
+            <input type="text" name="First_name"><br>
+            <span class="error" style="color: #ff3f36"><?php echo $first_name_err?></span><br>
+
+            <label for="">Last name</label><br>
+            <input type="text" name="Last_name"><br>
+            <span class="error" style="color: #ff3f36"><?php echo $last_name_err?></span><br>
+
+            <label for="">Email</label><br>
+            <input type="email" name="Email"><br>
+            <span class="error" style="color: #ff3f36"><?php echo $email_err?></span><br>
+
+            <label for="">Password</label><br>
+            <input type="password" name="Password1"><br>
+            <span class="error" style="color: #ff3f36"><?php echo $password1_err?></span><br>
+
+            <label for=""> Confirm password</label><br>
+            <input type="password" name="Password2"><br>
+            <span class="error" style="color: #ff3f36"><?php echo $password2_err?></span><br>
+
+            Gender:<br>
+            <span class="error" style="color: #ff3f36"><?php echo $gender_err?></span><br>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="other">Other <br><br>
+            <button type="submit">Signup</button>
+        </fieldset>
+    </form>
+</section>
+
+<!--start of footer-->
+<footer id="fot-down">
+    <h5 class="foot_text">Eclipse  Estates</h5>
+    <div class="row">
+        <div class="col col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <ul>
+                <h5>Payment Method</h5>
+                <l1><a href="">Visa</a></l1><br>
+                <l1><a href="">Payment on delivery</a></l1><br>
+                <l1><a href="">Mastercard</a></l1><br>
+            </ul>
+        </div>
+        <div class="col col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <h5>Join-us</h5>
+            <a href=""><img src="images/twitter-night.jpg" alt="s" class="img"></a>
+            <a href=""><img src="images/ig.jpg" alt="insta" class="img"></a>
+            <a href=""><img src="images/fb.jpg" alt="fb" class="img"></a>
+        </div>
+        <div class="col col-sm-4 col-md-4 col-lg-4 col-xl-4">
+            <h5>Contact-Us</h5>
+            <p><i>  Phone:0726967834</i> <br></p>
+            <p><i>Email:eclipse_estates@gmail.com</i></p>
+        </div>
+    </div>
+</footer>
+<!--end of footer-->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>

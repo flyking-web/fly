@@ -1,0 +1,107 @@
+/*core styles*/
+body{
+    background-color:#2deeff;
+}
+.img{
+    height: 100px;
+    width: 80px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.pos-f-t img{
+    height:80px;
+    position: center;
+}
+#header1{
+    text-align: center;
+    word-spacing:25px ;
+    color:black;
+    font-size: x-large;
+    object-position: center;
+
+}
+.img_2{
+    height: 30px;
+    padding-left: 30px;
+}
+.card-img-top{
+    padding:5px;
+    height:300px;
+    width: 490px;
+    color:cornflowerblue;
+}
+#search{
+    height:30px;
+    font-size:20px;
+    margin-left:40%;
+}
+#nav{
+    font-size:xx-large;
+    background-color:black;
+    color:blue;
+    height:115px;
+}
+.collapse {
+    color:white;
+}
+.map{
+    color:red;
+    font-size:xx-large;
+}
+.carousel-inner{
+    height:670px;
+}
+.mapi2{
+    padding:0;
+    height:500px;
+    width:1020px;
+}
+.card{
+    height:530px;
+    padding:2px;
+}
+.card-img-top{
+    padding:5px;
+    height:300px;
+    width: 490px;
+    color:cornflowerblue;
+}
+#fot-down{
+    background-color: black;
+    color:white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+ul{
+    list-style-type: none;
+}
+.foot_text{
+    text-align: center;
+    padding-bottom: 10px;
+}
+#section-b .card img{
+    width:280px;
+}
+#section-d .card img{
+    width:400px
+}
+.carousel-inner-fg{
+    height:400px;
+}
+.card-fg{
+    height:480px;
+    padding:2px;
+}
+.card-img-top{
+    padding:5px;
+    height:300px;
+    width: 490px;
+    color:white;
+}
+
+
+/*styling the login and signup forms*/
+#signop{
+    padding:4em;
+    position: center;
+}
