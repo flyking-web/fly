@@ -1,0 +1,25 @@
+.top_header{
+    background-color: red;
+    color: white;
+    text-align: center;
+    text-decoration-style: double;
+    margin:30px;
+    padding: 20px;
+}
+.landing_img{
+    background-image: url("./Downloads/roads.jpg");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 150%;
+    color: white;
+    text-align:center;
+    margin-top:-40px;
+    padding-top:20px;
+    font-size: 20px;
+}
+.navbar navbar-inverse{
+    margin: 20px;
+}
