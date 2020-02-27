@@ -1,0 +1,13 @@
+.top_header{
+	background-color: blue;
+	padding: 20px;
+	color: white;
+	text-align: center;
+}
+.landing_img{background-image: url('./images/lion1.jpg');
+background-repeat: no-repeat;background-size: cover;
+height: 1500px;
+width: 100%;
+color: white;
+text-align: center;
+}
